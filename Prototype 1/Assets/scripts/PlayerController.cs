@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed = 20;
+
+    void update()
+    {
+        transform.Translate(Vector3.forward * Time.deltatime * 20 speed);
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
